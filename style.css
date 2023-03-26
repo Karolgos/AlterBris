@@ -24,8 +24,57 @@ body {
   width: 250px;
 }
 
-.explosions {
+#navbar {
+  display: block;
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background-color: rgb(99, 99, 99);
+  top: 100px;
+  left: -100%;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+#options {
+  display: none;
+}
+
+#optionsBtn {
+  position: absolute;
+  z-index: 3;
+  order: 5;
+  font-size: 25px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: block;
+  color: ghostwhite;
+}
+
+#options:checked ~ #navbar {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+}
+
+.navbarItem {
+  display: block;
+  margin: 40px;
+  line-height: 30px;
+}
+
+.link {
+  text-transform: uppercase;
+}
+
+.explosion {
   position: fixed;
   right: 100px;
+  top: 250px;
+}
+
+.porn {
+  position: fixed;
+  right: 200px;
   top: 250px;
 }
