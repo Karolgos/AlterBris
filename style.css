@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(255, 231, 135, 0.832);
+}
+
+.logoPanel {
+  background-color: rgb(172, 53, 23);
+  height: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  right: 25px;
+  height: 250px;
+  width: 250px;
+}
+
+.explosions {
+  position: fixed;
+  right: 100px;
+  top: 250px;
+}
