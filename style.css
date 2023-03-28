@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: rgba(255, 231, 135, 0.832);
+  background-color: rgba(255, 231, 135, 0.832) !important;
+  padding: 0 !important;
 }
 
 .logoPanel {
@@ -14,12 +15,12 @@ body {
   place-items: center;
   background-color: rgb(172, 53, 23);
   height: 100px;
+  width: 100%;
 }
 
 .title {
   grid-column: 2;
   grid-row: 1;
-  padding-bottom: 40px;
 }
 
 .logo {
@@ -59,11 +60,33 @@ body {
   line-height: 30px;
 }
 
+main {
+  width: 70%;
+  text-align: center;
+  margin: 75px auto;
+}
+
+.staffImg {
+  max-width: 70%;
+  max-height: 450px;
+  margin: 30px auto;
+}
+
+.randomBtn {
+}
+
 .link {
   text-transform: uppercase;
 }
 
 .explosion {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
 }
 
 .porn {
@@ -74,7 +97,13 @@ body {
   right: 25px;
   bottom: 50px;
   padding: 10px;
-  width: 110px;
+  width: 100px;
   height: 100px;
   background-color: blueviolet;
+  border: 3px solid green;
+  border-radius: 50%;
+}
+
+.snortingVid {
+  max-width: 600px;
 }
