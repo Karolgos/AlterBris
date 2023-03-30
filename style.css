@@ -10,12 +10,15 @@ body {
 }
 
 .logoPanel {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 1fr 6fr 2fr;
   place-items: center;
   background-color: rgb(172, 53, 23);
   height: 100px;
-  width: 100%;
+  width: 100vw;
 }
 
 .title {
@@ -28,6 +31,10 @@ body {
   grid-row: 1;
 }
 
+.h3 {
+  margin-top: 200px !important;
+}
+
 #navbar {
   position: fixed;
   width: 30%;
@@ -37,6 +44,7 @@ body {
   left: -100%;
   transition: all 0.5s;
   text-align: center;
+  z-index: 2;
 }
 
 #options {
@@ -63,7 +71,12 @@ body {
 main {
   width: 70%;
   text-align: center;
-  margin: 75px auto;
+  margin: 0 auto;
+}
+
+.blockquote {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .staffImg {
@@ -99,11 +112,92 @@ main {
   padding: 10px;
   width: 100px;
   height: 100px;
-  background-color: blueviolet;
+  background-color: rgb(172, 53, 23);
   border: 3px solid green;
   border-radius: 50%;
 }
 
 .snortingVid {
   max-width: 600px;
+  margin-bottom: 250px;
+  position: relative;
+  z-index: -1;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: #3586ff !important;
+  min-height: 100px;
+  padding: 20px 50px;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  background: rgba(248, 113, 2, 0) url(./img/wave.png);
+  background-size: 1000px 100px;
+}
+
+#wave1 {
+  z-index: -1;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+#wave2 {
+  z-index: -2;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+#wave3 {
+  z-index: -1;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+#wave4 {
+  z-index: -2;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.footerTxt {
+  font-size: 16px !important;
+  text-align: center;
+  color: ghostwhite;
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
